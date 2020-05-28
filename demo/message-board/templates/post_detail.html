@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="{% static  'css/base.css' %}">
+</head>
+<body>
+    <h1>Post Detail</h1>
+    <h2>{{ post.text }}</h2>
+    <!-- <ul>
+        {% for post in all_posts %}
+        <li>{{ post.text }}</li>
+        {% endfor %}
+    </ul> -->
+</body>
+</html>
