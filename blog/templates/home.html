@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title%}
+Blog
+{% endblock title %}
+
+{% block header %}
+Welcome to our blog
+{% endblock header %}
+
+{% block content %}
+<ul>
+    {% for post in all_posts %}
+    <li><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></li> 
+    {% endfor %}
+</ul>
+{% endblock content %}
+
+
+
